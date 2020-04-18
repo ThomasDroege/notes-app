@@ -1,7 +1,8 @@
-const validator = require('validator')
+const chalk = require('chalk')
 const getNotes = require('./notes.js')
-const msg = getNotes()
 
+const msg = getNotes()
 console.log(msg)
 
-console.log(validator.isURL('https://www.google.de'))
+const greenMsg = chalk.green.bold.inverse('Success')
+console.log(greenMsg)
